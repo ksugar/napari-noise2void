@@ -15,31 +15,31 @@ This napari plugins has been derived from example notebooks published [here](htt
 * Load two example images, ideally acquired under the same conditions, for example [electron microscopy images provided by the n2v maintainers](https://download.fht.org/jug/n2v/SEM.zip).
 * Start the plugin from the `Tools > Filtering / noise removal > Train noise2void denoiser` and enter the two images.
 
-![img.png](docs/screenshot1.png)
+![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot1.png)
 
 * After clicking on `Run`, you can follow the progress in the terminal window in the background. This will take a while.
 
-![img.png](docs/screenshot2.png)
+![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot2.png)
 
 * After the model has been trained, the result computed on the training image will be shown. 
 
-![img.png](docs/screenshot3.png)
+![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot3.png)
 
 * You can reuse the model, e.g. by running the plugin `Tools > Filtering / noise removal > Apply noise2void denoiser` and entering its name in the text field.
 * Consider increasing the number of tiles in case your images are large.
 
 In this example, it was reused to also denoise the validation image.
 
-![img.png](docs/screenshot4.png)
+![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot4.png)
 
 * Consider using [napari-curtain](https://www.napari-hub.org/plugins/napari-curtain) from the menu `Tools > Visualization > Curtain` to blend between the original image and the denoised image.
 
-![img.png](docs/screenshot6.png)
+![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot6.png)
 
 The models are saved to the `models` folder in the directory where napari was started from. 
 If you just started napari from the command line, this should be a subfolder of your home directory.
 
-![img.png](docs/screenshot5.png)
+![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot5.png)
 
 Also consider training denoising models using the [example notebooks of n2v](https://github.com/juglab/n2v/tree/master/examples). 
 By training models from multiple images using those notebooks, the resulting models should be more robust and reliable.
@@ -47,14 +47,6 @@ By training models from multiple images using those notebooks, the resulting mod
 ----------------------------------
 
 This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
-
-<!--
-Don't miss the full getting started guide to set up your new package:
-https://github.com/napari/cookiecutter-napari-plugin#getting-started
-
-and review the napari docs for plugin developers:
-https://napari.org/plugins/index.html
--->
 
 ## Installation
 
