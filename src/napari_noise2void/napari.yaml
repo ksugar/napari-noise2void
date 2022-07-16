@@ -2,20 +2,17 @@ name: napari-noise2void
 display_name: Napari noise-2-void
 contributions:
   commands:
-    - id: napari-noise2void.make_qwidget
-      python_name: napari_noise2void._widget:ExampleQWidget
-      title: Make example QWidget
-    - id: napari-noise2void.make_magic_widget
-      python_name: napari_noise2void._widget:example_magic_widget
-      title: Make example magic widget
-    - id: napari-noise2void.make_func_widget
-      python_name: napari_noise2void._widget:example_function_widget
-      title: Make example function widget
+    - id: napari-noise2void.train_noise2void
+      python_name: napari_noise2void._widget:train_noise2void
+      title: Train noise2void
+    - id: napari-noise2void.apply_noise2void
+      python_name: napari_noise2void._widget:apply_noise2void
+      title: Apply noise2void
   widgets:
-    - command: napari-noise2void.make_qwidget
-      display_name: Example QWidget
-    - command: napari-noise2void.make_magic_widget
-      display_name: Example Magic Widget
-    - command: napari-noise2void.make_func_widget
+    - command: napari-noise2void.train_noise2void
       autogenerate: true
-      display_name: Example Function Widget
+      display_name: Train noise2void denoiser
+    - command: napari-noise2void.apply_noise2void
+      autogenerate: true
+      display_name: Apply noise2void denoiser
+
