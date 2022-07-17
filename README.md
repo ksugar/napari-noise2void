@@ -32,6 +32,12 @@ In this example, it was reused to also denoise the validation image.
 
 ![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot4.png)
 
+* Models can also be reused from the [napari-assistant](https://www.napari-hub.org/plugins/napari-assistant) user interface. 
+  Just click the "Remove noise" category button 
+  and select "Apply noise2void denoise" from the "Operation" pulldown and enter the model name:
+
+![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot_assistant.png)
+
 * Consider using [napari-curtain](https://www.napari-hub.org/plugins/napari-curtain) from the menu `Tools > Visualization > Curtain` to blend between the original image and the denoised image.
 
 ![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot6.png)

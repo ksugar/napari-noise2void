@@ -98,6 +98,9 @@ def apply_noise2void(image: "napari.types.ImageData",
     ..[0] https://github.com/juglab/n2v/blob/master/examples/3D/02_prediction.ipynb
     ..[1] https://github.com/juglab/n2v/blob/master/examples/2D/denoising2D_SEM/02_prediction.ipynb
     """
+    if len(model_filename) == 0:
+        raise Exception("No model chosen")
+
     from n2v.models import N2V
     import numpy as np
 
