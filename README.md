@@ -8,7 +8,7 @@
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-noise2void)](https://napari-hub.org/plugins/napari-noise2void)
 
 Image denoising using n2v as described in [Krull et al. 2019](https://arxiv.org/abs/1811.10980) and available as [python library n2v](https://github.com/juglab/n2v).
-This napari plugins has been derived from example notebooks published [here](https://github.com/juglab/n2v/tree/master/examples) ([licensed BSD](licenses_thirdparty/license.txt)).
+This napari plugin has been derived from example notebooks published [here](https://github.com/juglab/n2v/tree/master/examples) ([licensed BSD](licenses_thirdparty/license.txt)).
 
 ## Usage
 
@@ -33,8 +33,8 @@ In this example, it was reused to also denoise the validation image.
 ![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot4.png)
 
 * Models can also be reused from the [napari-assistant](https://www.napari-hub.org/plugins/napari-assistant) user interface. 
-  Just click the "Remove noise" category button 
-  and select "Apply noise2void denoise" from the "Operation" pulldown and enter the model name:
+  Just click the `Remove noise` category button 
+  and select `Apply noise2void denoiser` from the `Operation` pulldown and enter the model name:
 
 ![img.png](https://github.com/haesleinhuepf/napari-noise2void/raw/main/docs/screenshot_assistant.png)
 
