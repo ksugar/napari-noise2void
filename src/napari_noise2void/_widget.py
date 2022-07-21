@@ -43,9 +43,12 @@ def train_noise2void(training_image: "napari.types.ImageData",
     else:
         raise ValueError("Only 2D and 3D data supported.")
 
+    # Conform patch_shape for N2V_DataGenerator
+    patch_shape = tuple(min(4 * ((s - 1) // 4), ps) for s, ps in zip(training_image.shape, patch_shape))
+
     data = np.asarray([training_image[..., np.newaxis]])
     data.shape
-    print("data shope", data.shape)
+    print("data shape", data.shape)
 
     X = datagen.generate_patches(data, shape=patch_shape)
     X_val = datagen.generate_patches(np.asarray([validation_image[...,np.newaxis]]), shape=patch_shape)
