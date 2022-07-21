@@ -72,7 +72,7 @@ def train_noise2void(training_image: "napari.types.ImageData",
     model.export_TF(name=model_filename,
                     description=model_description,
                     authors=model_authors.split(","),
-                    test_img=X_val[0, ..., 0], axes=axes,
+                    test_img=X_val[0, ..., 0], axes=axes[:-1],
                     patch_shape=patch_shape)
 
     return apply_noise2void(training_image, model_filename=model_filename)
